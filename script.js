@@ -22,7 +22,7 @@ gerarSenha = () => {
     novaSenha = senhaGerada;
 }
 copiarSenha = () => {
-    alert("Senha copiada com sucesso!");
     navigator.clipboard.writeText(novaSenha);
+    alert("Senha copiada com sucesso!");
 }
 
