@@ -1,0 +1,106 @@
+* {
+    font-family: monospace;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#header {
+    font-size: 28pt;
+    color: white;
+    display: flex;
+    text-align: center;
+    text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87;
+    
+}
+
+.container-main {
+    max-width: 400px;
+    margin: 14px 0;
+    color: white;
+}
+
+#botaoGerador {
+    height: 40px;
+    background-color: red;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 25px;
+    color: white;
+    font-weight: bold;
+    font-size: 18pt;
+}
+
+.container-senha {
+    max-width: 480px;
+    margin: 14px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.title {
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.senha {
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.40);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 1px solid gray;
+    transition: transform 0.5s;
+}
+
+.senha:hover {
+    transform: scale(1.05);
+    font-size: 18pt;
+}
+
+.tooltip {
+    color: white;
+    position: relative;
+    top: 20px;
+    padding: 6px 8px;
+    background: rgb(15, 15, 15);
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.esconder {
+    display: none;
+}
+
+.container-senha:hover .tooltip {
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+}
+#container-main #textoTamanho{
+    font-size: 15pt;
+    align-items: center;
+    margin-left: 25%;
+}
